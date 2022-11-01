@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="É um jornal que traz notícias e matérias da nossa querida cidade, antes chamada de Araritaguaba, e que fica localizada no interior do estado de São Paulo">
+  <meta name="author" content="Rodrigo de Freitas">
+  <meta name="keywords" content="porto feliz, jornal, notícias, entretenimento">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="imagens/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+  <link rel="stylesheet" type="text/css" href="CSS/all.css">
+  <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <title>Jornal O Arauto de Porto Feliz</title>
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <img src="imagens/ham-icon.png" alt="Menu" class="cabecalho__menu">
+    <h1 class="titulo">O Arauto</h1>
+  </header>
+
+  <nav class="menu-lateral">
+    <a href="index.html"><img src="imagens/logo-arauto.svg" alt="Logotipo do Jornal O Arauto" class="menu-lateral__logo"></a>
+    <a href="edicoes001.html" class="menu-lateral__link">Edições</a>
+    <a href="https://www.facebook.com/jornaloarautopf" class="menu-lateral__link"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook</a>
+    <a href="not001.html" class="menu-lateral__link">Notícias Populares</a>
+    <a href="coluna01.html" class="menu-lateral__link">Coluna</a>
+    <a href="contato.html" class="menu-lateral__link menu-lateral__link--ativo">Contato</a>
+  </nav>
+
+  <div class="overlay hidden">
+    
+  </div>
+
+  <main class="principal">
+    <h2>Contate-nos!</h2>
+
+    <div class="main-contact">
+      <template>
+        <div class="col2">
+          <form action="mailto:comercial@oarautopfz.com.br" method="post">
+
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome"><br><br>
+
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email"><br><br>
+
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem"></textarea><br><br>
+
+            <input type="submit" value="Enviar" id="enviar">
+          </form>
+        </div>
+      </template>
+
+      <div class="col1">
+        <address>
+
+          <p>
+            <span>Endereço</span><br>
+            Rua Araci Sampaio de Almeida, 131<br>
+            Vila América - Porto Feliz - SP<br>
+            Brazil
+          </p>
+
+          <p>
+            <span>Telefone</span><br>
+            (15) 99711-9012
+          </p>
+
+          <p>
+            <span>E-mail</span>
+            <br><a href="mailto:oarautopfz@gmail.com"> oarautopfz@gmail.com</a>
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.7134196193132!2d-47.50764632959661!3d-23.21200249902586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5fe4009102b09%3A0x481d878c5cdaaae0!2sR.+Araci+Sampaio+de+Almeida%2C+131%2C+Porto+Feliz+-+SP%2C+18540-000!5e0!3m2!1spt-BR!2sbr!4v1548876801108"
+            width="100%" height="195px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </address>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <footer class="rodape">
+    <p>2022 - Copyright © Jornal O Arauto <br />
+      Desenvolvido por <a href="https://www.facebook.com/rodrigo.freitas.393950">Rodrigo de Freitas</p></a>
+  </footer>
+
+  <script type="text/javascript" src="index.js">
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,457 @@
+:root {
+  --escuro: #222831;
+  --escuro-light: #393e46;
+  --destaque: #00adb5;
+  --claro: #eeeeee;
+}
+
+@media (max-width: 820px) {
+  body {
+    background-color: var(--escuro-light);
+    font-family: "Montserrat", "icones", sans-serif;
+    color: var(--claro);
+  }
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--escuro);
+    padding: 8px 16px;
+    box-shadow: 0 5px 5px var(--escuro);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  .titulo {
+    font-weight: bold;
+  }
+
+  .cabecalho__menu {
+    width: 30px;
+  }
+
+  .menu-lateral {
+    background-color: var(--escuro);
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    left: -100vw;
+    transition: 0.5s;
+    z-index: 10;
+  }
+
+  .menu-lateral--ativo {
+    left: 0;
+    transition: 0.5s;
+  }
+
+  .menu-lateral__logo {
+    width: 118px;
+    padding: 0 0 20px 50px;
+  }
+
+  .menu-lateral__link {
+    color: #ccc;
+    text-decoration: none;
+    padding: 20px 20px 20px 50px;
+  }
+
+  .menu-lateral__link--ativo {
+    color: var(--destaque);
+    border-left: 8px var(--destaque) solid;
+    border-right: 8px var(--escuro) solid;
+    background-color: var(--escuro-light);
+  }
+
+  .principal {
+    margin: 24px;
+    position: relative;
+    top: 55px;
+  }
+
+  article {
+    padding-bottom: 20px;
+  }
+
+  .titulo__destaque {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--destaque);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .demais__edicoes {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .grid-container p {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--escuro);
+    line-height: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--claro);
+  }
+
+  .post-imagem {
+    width: 100%;
+  }
+
+  .demais {
+    text-align: center;
+  }
+
+  .demais h2 {
+    padding-top: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .capa-mini {
+    display: block;
+    width: 100%;
+  }
+
+  .link__botao {
+    display: block;
+    background-color: var(--destaque);
+    margin: 30px;
+    padding: 20px;
+  }
+
+  .coluna {
+    background-color: var(--claro);
+    color: var(--escuro-light);
+    padding: 10px 10px 30px;
+    border-radius: 5px;
+    line-height: 1.5rem;
+  }
+
+  .coluna a {
+    color: var(--destaque);
+  }
+
+  .coluna a:hover {
+    font-weight: bold;
+    color: var(--destaque);
+  }
+
+  .titulo__coluna {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .intertitulo {
+    color: var(--destaque);
+    font-weight: bold;
+  }
+
+  .chapeu__coluna {
+    background-color: var(--destaque);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--claro);
+    margin-bottom: 10px;
+  }
+
+  .foto__jeb {
+    height: 60px;
+    float: left;
+    margin: 20px 10px 20px 0;
+  }
+
+  .assinatura {
+    font-size: 0.8rem;
+    margin-top: 25px;
+    line-height: 1rem;
+  }
+
+  .pag {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  span {
+    font-weight: bold;
+    color: var(--destaque);
+  }
+
+  .col1 {
+    line-height: 2rem;
+  }
+
+  .rodape {
+    height: 100px;
+    background-color: var(--escuro);
+    text-align: center;
+    font-size: 0.7rem;
+    color: #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 1.2rem;
+    position: relative;
+    top: 55px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 821px) {
+  body {
+    background-color: var(--escuro-light);
+    font-family: "Montserrat", "icones", sans-serif;
+    color: var(--claro);
+  }
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--escuro);
+    padding: 8px 16px;
+    box-shadow: 0 5px 5px var(--escuro);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 6;
+  }
+
+  .titulo {
+    font-weight: bold;
+  }
+
+  .cabecalho__menu {
+    width: 30px;
+  }
+
+  .menu-lateral {
+    background-color: var(--escuro);
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 45px;
+    left: -100vw;
+    transition: 0.5s;
+    z-index: 10;
+  }
+
+  .menu-lateral--ativo {
+    left: 0;
+    transition: 0.5s;
+  }
+
+  .menu-lateral__logo {
+    width: 118px;
+    padding: 0 0 20px 50px;
+  }
+
+  .menu-lateral__link {
+    color: #ccc;
+    text-decoration: none;
+    padding: 20px 20px 20px 50px;
+  }
+
+  .menu-lateral__link--ativo {
+    color: var(--destaque);
+    border-left: 8px var(--destaque) solid;
+    border-right: 8px var(--escuro) solid;
+    background-color: var(--escuro-light);
+  }
+
+  .principal {
+    margin: 24px;
+    position: relative;
+    top: 55px;
+    z-index: 2;
+  }
+
+  article {
+    padding-bottom: 20px;
+  }
+
+  .capa__destaque {
+    float: left;
+    margin-right: 30px;
+  }
+
+  .titulo__destaque {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--destaque);
+    padding-bottom: 10px;
+  }
+
+  .demais__edicoes {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .grid-container p {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--escuro);
+    line-height: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--claro);
+  }
+
+  .post-imagem {
+    height: 80vh;
+  }
+
+  .demais {
+    text-align: center;
+  }
+
+  .demais h2 {
+    padding-top: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .capa-mini {
+    display: block;
+    width: 100%;
+  }
+
+  .link__botao {
+    display: block;
+    background-color: var(--destaque);
+    margin: 30px 0px 0px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .coluna {
+    background-color: var(--claro);
+    color: var(--escuro-light);
+    padding: 10px 10px 30px;
+    border-radius: 5px;
+    line-height: 1.5rem;
+  }
+
+  .coluna a {
+    color: var(--destaque);
+  }
+
+  .coluna a:hover {
+    font-weight: bold;
+    color: var(--destaque);
+  }
+
+  .titulo__coluna {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .intertitulo {
+    color: var(--destaque);
+    font-weight: bold;
+  }
+
+  .chapeu__coluna {
+    background-color: var(--destaque);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--claro);
+    margin-bottom: 10px;
+  }
+
+  .foto__jeb {
+    height: 60px;
+    float: left;
+    margin: 20px 10px 20px 0;
+  }
+
+  .assinatura {
+    font-size: 0.8rem;
+    margin-top: 25px;
+    line-height: 1rem;
+  }
+
+  .pag {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  span {
+    font-weight: bold;
+    color: var(--destaque);
+  }
+
+  .col1 {
+    line-height: 2rem;
+  }
+
+  .rodape {
+    height: 260px;
+    background-color: var(--escuro);
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+    color: #ccc;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
